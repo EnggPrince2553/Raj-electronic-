@@ -1,0 +1,20 @@
+{
+  "name": "raj-electronics",
+  "version": "1.0.0",
+  "description": "Raj electronic sells & Service – Local Market Electronic Shop Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon --watch server.js server.js",
+    "code": "nodemon --watch server.js server.js"
+  },
+  "keywords": [
+    "electronics",
+    "shop",
+    "local market"
+  ],
+  "author": "Raj electronic sells & Service",
+  "dependencies": {
+    "mongoose": "^9.6.2"
+  }
+}

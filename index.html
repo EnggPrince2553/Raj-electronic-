@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Raj electronic sells & Service – Your trusted local market electronic store for components, tools, sensors, and microcontrollers at the best prices." />
+  <title>Raj electronic sells & Service | Local Market Electronic Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <div class="brand-icon">⚡</div>
+        <div class="brand-text">
+          <span class="brand-name">Raj</span>
+          <span class="brand-sub">electronic sells & Service</span>
+        </div>
+        <div class="open-badge">OPEN</div>
+      </div>
+      <div class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#sells" class="nav-link">Sells</a>
+        <a href="#services" class="nav-link">Services</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn-search" id="searchBtn" title="Search">🔍</button>
+        <button class="btn-cart" id="cartBtn">
+          🛒 Cart <span class="cart-count" id="cartCount">0</span>
+        </button>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== SEARCH OVERLAY ========== -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search products, components, tools…" autocomplete="off" />
+      <button class="search-close" id="searchClose">✕</button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <header class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">📍 Phoolpur Market</div>
+      <h1 class="hero-title">
+        <span class="word-anim">Home</span>
+        <span class="word-anim highlight">Appliances</span>
+        <span class="word-anim">&amp; Electricals</span>
+      </h1>
+      <p class="hero-subtitle">
+        Premium quality appliances, lighting, and electrical items at unbeatable local market prices.<br />
+        <span class="mono">fans • coolers • lighting • electricals → all in one place</span>
+      </p>
+
+    </div>
+
+    <!-- Team Profiles (Side) -->
+    <div class="team-profiles">
+      <div class="profile-card profile-owner" title="Store Owner: J.P (Master)">
+        <div class="worker">🙋‍♂️</div>
+        <div class="profile-label">J.P (Master)</div>
+      </div>
+      <div class="profile-card profile-1" title="Lead Electrician">
+        <div class="worker">👨‍🔧</div>
+        <div class="profile-label">Jamindar</div>
+      </div>
+      <div class="profile-card profile-2" title="Senior Technician">
+        <div class="worker">👷‍♂️</div>
+        <div class="profile-label">Harikesh bahadur singh</div>
+      </div>
+      <div class="profile-card profile-3" title="Master Assembler">
+        <div class="worker">🧑‍🏭</div>
+        <div class="profile-label">Anand kumar</div>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- ========== WHATSAPP IMAGE GALLERY ========== -->
+  <section class="gallery-section" id="gallery">
+    <div class="gallery-header">
+      <span class="section-tag">📸 Store Gallery</span>
+      <h2 class="section-title">Our Store &amp; Products</h2>
+      <p class="section-desc">Real photos straight from our store — drag or scroll to explore!</p>
+    </div>
+    <div class="gallery-strip-wrap">
+      <button class="gallery-btn" id="galleryLeft" aria-label="Scroll left">&#8249;</button>
+      <div class="gallery-strip" id="galleryStrip">
+        <div class="gallery-card">
+          <img src="images/WhatsApp Image 2026-04-18 at 10.26.44 PM.jpeg" alt="Store Photo 1" />
+          <div class="gallery-card-caption">📦 Fresh Stock Arrivals</div>
+        </div>
+        <div class="gallery-card">
+          <img src="images/WhatsApp Image 2026-04-18 at 10.26.44 PM (1).jpeg" alt="Store Photo 2" />
+          <div class="gallery-card-caption">🛒 Product Display</div>
+        </div>
+        <div class="gallery-card">
+          <img src="images/WhatsApp Image 2026-04-18 at 10.26.44 PM (2).jpeg" alt="Store Photo 3" />
+          <div class="gallery-card-caption">⚡ Electrical Supplies</div>
+        </div>
+        <div class="gallery-card">
+          <img src="images/WhatsApp Image 2026-04-18 at 10.26.44 PM (3).jpeg" alt="Store Photo 4" />
+          <div class="gallery-card-caption">🌀 Home Appliances</div>
+        </div>
+        <div class="gallery-card">
+          <img src="images/WhatsApp Image 2026-05-23 at 12.08.35 PM.jpeg" alt="Store Photo 5" />
+          <div class="gallery-card-caption">🛠️ Service &amp; Repairs</div>
+        </div>
+      </div>
+      <button class="gallery-btn" id="galleryRight" aria-label="Scroll right">&#8250;</button>
+    </div>
+  </section>
+
+  <!-- ========== STORE STATUS BAR ========== -->
+  <div class="store-status-bar">
+    <div class="status-inner">
+      <div class="status-chip open-chip">🟢 Store Open • 9 AM – 9 PM</div>
+      <div class="status-chip">📦 <span id="totalProducts">0</span> Products Available</div>
+      <div class="status-chip">📍 Phoolpur Market</div>
+      <div class="status-chip">📞 +91 75220 95892</div>
+      <div class="status-chip glow-chip">⚡ Genuine spare parts available</div>
+    </div>
+  </div>
+
+  <!-- ========== SELLS SECTION ========== -->
+  <section class="products-section" id="sells">
+    <div class="section-header">
+      <span class="section-tag">🛒 Store Inventory</span>
+      <h2 class="section-title">Electronic Sells & Items</h2>
+      <p class="section-desc">Premium components, appliances, and tools available in-store.</p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-wrap">
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-btn active" data-cat="all">⚡ All Items</button>
+        <button class="filter-btn" data-cat="appliances">🌀 Appliances</button>
+        <button class="filter-btn" data-cat="lighting">💡 Lighting</button>
+        <button class="filter-btn" data-cat="electrical">🔌 Electrical</button>
+      </div>
+    </div>
+
+    <!-- Sort Bar -->
+    <div class="sort-bar">
+      <div class="showing-count" id="showingCount">Showing 0 all products</div>
+      <select class="sort-select" id="sortSelect">
+        <option value="default">Sort by: Recommended</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name">Name: A to Z</option>
+        <option value="stock">In Stock First</option>
+      </select>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- ========== SERVICES SECTION ========== -->
+  <section class="services-section" id="services">
+    <div class="section-header">
+      <span class="section-tag">🛠️ Professional Help</span>
+      <h2 class="section-title">Expert Technical Services</h2>
+      <p class="section-desc">Certified technicians for all your installation and repair needs.</p>
+    </div>
+
+    <!-- Highlights Banner -->
+    <div class="services-highlights">
+      <div class="highlight-card">
+        <div class="highlight-icon-wrap">⚙️</div>
+        <h4 class="highlight-card-title">Upgraded Systems</h4>
+        <p class="highlight-card-text">Advanced diagnosis & modern tools.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon-wrap">👨‍🔧</div>
+        <h4 class="highlight-card-title">Expert Technicians</h4>
+        <p class="highlight-card-text">Highly-trained professionals.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon-wrap">⚡</div>
+        <h4 class="highlight-card-title">Fast &amp; Reliable</h4>
+        <p class="highlight-card-text">Same-day inspection & quick fixes.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon-wrap">🛡️</div>
+        <h4 class="highlight-card-title">Genuine Spare Parts</h4>
+        <p class="highlight-card-text">100% original manufacturer parts.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon-wrap">🏠</div>
+        <h4 class="highlight-card-title">Doorstep Service</h4>
+        <p class="highlight-card-text">Convenient home repairs.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon-wrap">💰</div>
+        <h4 class="highlight-card-title">Affordable Rates</h4>
+        <p class="highlight-card-text">Transparent local pricing.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon-wrap">📞</div>
+        <h4 class="highlight-card-title">Customer Support</h4>
+        <p class="highlight-card-text">Easy booking & phone help.</p>
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <!-- Dynamically Rendered by main.js -->
+    </div>
+
+    <!-- Section CTA Row -->
+    <div class="services-cta-row">
+      <button class="btn-book-service-global" id="globalBookBtn">📅 Book a Service Online</button>
+      <a href="tel:+917522095892" class="btn-contact-services">📞 Call Support</a>
+    </div>
+  </section>
+
+  <!-- ========== CART SIDEBAR ========== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>🛒 Your Cart</h3>
+      <button class="cart-side-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <div class="empty-icon">🛍️</div>
+        <p>Your cart is empty</p>
+        <span>Add products to get started!</span>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <em>Visit store for pricing</em>
+      </div>
+      <button class="checkout-btn">🎉 Place Order (In-Store)</button>
+    </div>
+  </div>
+
+  <!-- ========== PRODUCT MODAL ========== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="productModal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ========== BOOKING MODAL ========== -->
+  <div class="modal-overlay" id="bookingModalOverlay">
+    <div class="modal" id="bookingModal">
+      <button class="modal-close" id="bookingModalClose">✕</button>
+      <div class="modal-body">
+        <h3 class="modal-title">🔧 Book a Repair Service</h3>
+        <p class="modal-subtitle">Fill in the details below and our technician will contact you shortly.</p>
+        
+        <form id="bookingForm" class="booking-form">
+          <div class="form-group">
+            <label for="bookingName">Your Name</label>
+            <input type="text" id="bookingName" required placeholder="Enter your full name" />
+          </div>
+          <div class="form-group">
+            <label for="bookingPhone">Phone Number</label>
+            <input type="tel" id="bookingPhone" required placeholder="Enter your 10-digit number" pattern="[0-9]{10}" />
+          </div>
+          <div class="form-group">
+            <label for="bookingService">Select Appliance / Service</label>
+            <select id="bookingService" required>
+              <option value="" disabled selected>Choose a service</option>
+              <option value="ac">AC Repair & Service</option>
+              <option value="refrigerator">Refrigerator Repair</option>
+              <option value="washing-machine">Washing Machine Repair</option>
+              <option value="cooler">Cooler Repair</option>
+              <option value="microwave">Microwave Oven Repair</option>
+              <option value="water-purifier">Water Purifier Service</option>
+              <option value="tv">LED/Smart TV Repair</option>
+              <option value="geyser">Geyser Repair</option>
+              <option value="kitchen-appliances">Kitchen Appliance Repairs</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bookingAddress">Home Address</label>
+            <textarea id="bookingAddress" required rows="3" placeholder="Enter your full doorstep address"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="bookingNotes">Message / Problem Description</label>
+            <textarea id="bookingNotes" required rows="2" placeholder="Describe the issue you are facing..."></textarea>
+          </div>
+          
+          <button type="submit" class="booking-submit-btn">⚡ Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ORDER CHECKOUT MODAL ========== -->
+  <div class="modal-overlay" id="orderModalOverlay">
+    <div class="modal" id="orderModal">
+      <button class="modal-close" id="orderModalClose">✕</button>
+      <div class="modal-body">
+        <h3 class="modal-title">📦 Place Your Order</h3>
+        <p class="modal-subtitle">Provide your contact information to complete your purchase (in-store pickup or cash on doorstep delivery).</p>
+        
+        <form id="orderForm" class="booking-form">
+          <div class="form-group">
+            <label for="orderName">Your Name</label>
+            <input type="text" id="orderName" required placeholder="Enter your full name" />
+          </div>
+          <div class="form-group">
+            <label for="orderPhone">Phone Number</label>
+            <input type="tel" id="orderPhone" required placeholder="Enter your 10-digit number" pattern="[0-9]{10}" />
+          </div>
+          <div class="form-group">
+            <label for="orderDelivery">Delivery Preference</label>
+            <select id="orderDelivery" required>
+              <option value="pickup" selected>In-Store Pickup (Pay at Shop)</option>
+              <option value="delivery">Home Delivery (Cash on Delivery)</option>
+            </select>
+          </div>
+          <div class="form-group" id="orderAddressGroup" style="display: none;">
+            <label for="orderAddress">Doorstep Address</label>
+            <textarea id="orderAddress" rows="3" placeholder="Enter your full doorstep address for delivery"></textarea>
+          </div>
+          
+          <!-- Order Summary Inside Modal -->
+          <div class="order-summary-box" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px; margin-bottom: 20px;">
+            <h4 style="margin-top:0; margin-bottom: 8px; font-size: 0.95rem; color: #38bdf8;">📝 Items Summary</h4>
+            <div id="orderSummaryItems" style="max-height: 120px; overflow-y: auto; font-size: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px; margin-bottom: 8px;"></div>
+            <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 0.95rem;">
+              <span>Total Price:</span>
+              <span id="orderSummaryTotal" style="color: #22d3ee;">₹0</span>
+            </div>
+          </div>
+          
+          <button type="submit" class="booking-submit-btn">⚡ Confirm & Place Order</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-icon">⚡</div>
+        <div>
+          <div class="footer-name">Raj electronic sells & Service</div>
+          <div class="footer-tagline">Powering your ideas since 2014</div>
+          <div class="footer-owner">Proprietor: J.P (Master)</div>
+          <div class="footer-owner">Jamindar bhai</div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#sells">Sells</a>
+        <a href="#services">Services</a>
+        <a href="#home">Location</a>
+      </div>
+      <div class="footer-copy">
+        © 2025 Raj electronic sells & Service. All rights reserved. | Made with ❤️ for local makers.
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
