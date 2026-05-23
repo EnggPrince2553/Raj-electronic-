@@ -122,10 +122,14 @@ const server = http.createServer(async (req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log('');
-  console.log('  ⚡  Raj electronic sells & Service is running!');
-  console.log(`  🌐  Open in browser → http://localhost:${PORT}`);
-  console.log('  🔴  Press Ctrl+C to stop');
-  console.log('');
-});
+if (require.main === module) {
+  server.listen(PORT, () => {
+    console.log('');
+    console.log('  ⚡  Raj electronic sells & Service is running!');
+    console.log(`  🌐  Open in browser → http://localhost:${PORT}`);
+    console.log('  🔴  Press Ctrl+C to stop');
+    console.log('');
+  });
+}
+
+module.exports = server;
