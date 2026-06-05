@@ -14,9 +14,4 @@ export class Navbar {
     }, { passive: true });
   }
 
-  // Navbar is mostly static in HTML, but we can manage badges/counts here
-  static updateCartCount(count) {
-    const countEl = document.getElementById('cartCount');
-    if (countEl) countEl.textContent = count;
-  }
 }

@@ -27,10 +27,10 @@ export class ProductModal {
               <span class="spec-val">${v}</span>
             </div>`).join('')}
         </div>
-        <div class="modal-actions">
-          <button class="modal-add-btn" ${product.isOutOfStock ? 'disabled' : ''} data-id="${product.id}">
-            ${product.isOutOfStock ? '❌ Out of Stock' : '🛒 Add to Cart'}
-          </button>
+        <div class="modal-actions" style="justify-content: center; align-items: center; text-align: center; width: 100%; padding: 12px 0;">
+          <span style="color: var(--accent); font-weight: 600; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
+            📍 Available in-store only
+          </span>
         </div>
       </div>`;
   }

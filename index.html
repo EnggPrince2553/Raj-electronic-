@@ -38,10 +38,6 @@
       </div>
       <div class="nav-actions">
         <button class="btn-search" id="searchBtn" title="Search">🔍</button>
-        <button class="btn-cart" id="cartBtn">
-          🛒 Cart <span class="cart-count" id="cartCount">0</span>
-        </button>
-        
       </div>
     </div>
   </nav>
@@ -233,27 +229,7 @@
     </div>
   </section>
 
-  <!-- ========== CART SIDEBAR ========== -->
-  <div class="cart-overlay" id="cartOverlay"></div>
-  <div class="cart-sidebar" id="cartSidebar">
-    <div class="cart-header">
-      <h3>🛒 Your Cart</h3>
-      <button class="cart-side-close" id="cartClose">✕</button>
-    </div>
-    <div class="cart-items" id="cartItems">
-      <div class="cart-empty">
-        <div class="empty-icon">🛍️</div>
-        <p>Your cart is empty</p>
-        <span>Add products to get started!</span>
-      </div>
-    </div>
-    <div class="cart-footer" id="cartFooter" style="display:none">
-      <div class="cart-total">
-        <em>Visit store for pricing</em>
-      </div>
-      <button class="checkout-btn">🎉 Place Order (In-Store)</button>
-    </div>
-  </div>
+
 
   <!-- ========== PRODUCT MODAL ========== -->
   <div class="modal-overlay" id="modalOverlay">
@@ -305,51 +281,6 @@
           </div>
           
           <button type="submit" class="booking-submit-btn">⚡ Confirm Booking</button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!-- ========== ORDER CHECKOUT MODAL ========== -->
-  <div class="modal-overlay" id="orderModalOverlay">
-    <div class="modal" id="orderModal">
-      <button class="modal-close" id="orderModalClose">✕</button>
-      <div class="modal-body">
-        <h3 class="modal-title">📦 Place Your Order</h3>
-        <p class="modal-subtitle">Provide your contact information to complete your purchase (in-store pickup or cash on doorstep delivery).</p>
-        
-        <form id="orderForm" class="booking-form">
-          <div class="form-group">
-            <label for="orderName">Your Name</label>
-            <input type="text" id="orderName" required placeholder="Enter your full name" />
-          </div>
-          <div class="form-group">
-            <label for="orderPhone">Phone Number</label>
-            <input type="tel" id="orderPhone" required placeholder="Enter your 10-digit number" pattern="[0-9]{10}" />
-          </div>
-          <div class="form-group">
-            <label for="orderDelivery">Delivery Preference</label>
-            <select id="orderDelivery" required>
-              <option value="pickup" selected>In-Store Pickup (Pay at Shop)</option>
-              <option value="delivery">Home Delivery (Cash on Delivery)</option>
-            </select>
-          </div>
-          <div class="form-group" id="orderAddressGroup" style="display: none;">
-            <label for="orderAddress">Doorstep Address</label>
-            <textarea id="orderAddress" rows="3" placeholder="Enter your full doorstep address for delivery"></textarea>
-          </div>
-          
-          <!-- Order Summary Inside Modal -->
-          <div class="order-summary-box" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 12px; margin-bottom: 20px;">
-            <h4 style="margin-top:0; margin-bottom: 8px; font-size: 0.95rem; color: #38bdf8;">📝 Items Summary</h4>
-            <div id="orderSummaryItems" style="max-height: 120px; overflow-y: auto; font-size: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 8px; margin-bottom: 8px;"></div>
-            <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 0.95rem;">
-              <span>Total Price:</span>
-              <span id="orderSummaryTotal" style="color: #22d3ee;">₹0</span>
-            </div>
-          </div>
-          
-          <button type="submit" class="booking-submit-btn">⚡ Confirm & Place Order</button>
         </form>
       </div>
     </div>
